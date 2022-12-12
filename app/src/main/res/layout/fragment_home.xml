@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4A21A1"
+    tools:context=".HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4A21A1">
+
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="332dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginRight="26dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/m" />
+
+            <FrameLayout
+                android:layout_width="103dp"
+                android:layout_height="39dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="10dp">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:text="Welcome back! 👋"
+                    android:textSize="11sp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/white" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Hello Iqbal"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/white" />
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/notification" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout2"
+            android:layout_width="332dp"
+            android:layout_height="213dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="17dp"
+                android:text="Total Balance"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_regular"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="40dp"
+                android:text="$5,000.00"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                android:fontFamily="@font/poppins_bold"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="52dp"
+                android:layout_marginRight="55dp"
+                android:src="@drawable/arrow_up" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="15dp"
+                android:text="15%"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppins_semibold"/>
+
+            <FrameLayout
+                android:layout_width="303dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/bg2">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/top_up"
+                    android:src="@drawable/wallet_add" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/money_send" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="100dp"
+                    android:src="@drawable/receipt_discount" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="40dp"
+                    android:src="@drawable/category" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="34dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Top Up"
+                    android:textSize="11sp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/white" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="95dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Transfer"
+                    android:textSize="11sp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/white" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="168dp"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="11sp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Bills"
+                    android:textColor="@color/white" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="225dp"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="11sp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Others"
+                    android:textColor="@color/white" />
+            </FrameLayout>
+        </FrameLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg3"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout2"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout_editor_absoluteX="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:text="Recent Transactions"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/poppins_semibold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="See all"
+                    android:textColor="#4A21A1"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/poppins_medium"/>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frameLayout2"
+                tools:listitem="@layout/item_list" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
